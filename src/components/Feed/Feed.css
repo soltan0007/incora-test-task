@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.feeds-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.logout-button {
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: #cc1938;
+    transition: color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+    color: #591527;
+}
+
+h2 {
+    text-align: center;
+    color: #cc1938;
+}
+
+.feed-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feed-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feed-item:hover {
+    transform: scale(1.05);
+}
+
+.feed-item strong {
+    color: #cc1938;
+    font-size: 1.2em;
+}
+
+.feed-item p {
+    margin: 10px 0;
+    color: #333;
+}
+
+.feed-item button {
+    background-color: #cc1938;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.feed-item button:hover {
+    background-color: #591527;
+}
+
+.add-feed {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-feed input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.add-feed button {
+    padding: 12px 20px;
+    background-color: #cc1938;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-feed button:hover {
+    background-color: #591527;
+}
